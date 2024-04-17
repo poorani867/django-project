@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" action="add">
+{% csrf_token %}
+    <table>
+        <tr>
+            <td>number1:</td>
+            <td><input type="number" name="txtnumber1"></td>
+        </tr>
+        <tr>
+            <td>number2:</td>
+            <td><input type="number" name="txtnumber2"></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="add"></td>
+              <td><input type="submit" value="mul" formaction="mul"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
